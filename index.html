@@ -151,6 +151,26 @@ h2{font-size:clamp(25px,3.6vw,34px);font-weight:700;letter-spacing:-.028em}
 .nvmeta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .nvmeta span{font-size:11.5px;letter-spacing:.04em;color:var(--tx2);background:#151920;border:1px solid var(--line);border-radius:999px;padding:5px 11px}
 
+/* FEATURE */
+.ftgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+@media(max-width:700px){.ftgrid{grid-template-columns:1fr}}
+.ftpanel{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#0c0e12}
+.ftpanel img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center 42%}
+@media(max-width:700px){.ftpanel img{aspect-ratio:4/3}}
+.ftpanel .ftshade{position:absolute;inset:auto 0 0 0;padding:16px 18px 15px;
+  background:linear-gradient(to top,rgba(8,10,14,.94) 0%,rgba(8,10,14,.72) 55%,rgba(8,10,14,0) 100%)}
+.ftpart{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ff5c39;font-weight:700}
+.ftpanel h4{font-size:16.5px;font-weight:700;letter-spacing:-.2px;margin-top:5px;color:#fff}
+.ftpanel .ftrun{font-size:12px;color:var(--tx3);margin-top:4px}
+.ftfacts{margin-top:20px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+@media(max-width:760px){.ftfacts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ftfact{background:var(--card);padding:15px 16px}
+.ftfact .k{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--tx3)}
+.ftfact .v{font-size:13.5px;color:var(--tx2);margin-top:6px;line-height:1.5}
+.ftfact .v b{color:#fff;font-weight:600}
+.ftnote{margin-top:16px;color:var(--tx2);font-size:13.5px;line-height:1.62;max-width:820px}
+
 /* FEST */
 .festwrap{display:flex;gap:34px;align-items:flex-start}
 .poster{flex:none;width:264px}
@@ -209,7 +229,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
 <nav><div class="wrap">
   <div class="logo">MOOWON<span>.</span>KIM</div>
   <div class="navlinks">
-    <a href="#work">Work</a><a href="#audience">MONO MARS</a><a href="#festivals">Festivals</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <a href="#work">Work</a><a href="#audience">MONO MARS</a><a href="#feature">Feature</a><a href="#festivals">Festivals</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
   </div>
 </div></nav>
 
@@ -288,8 +308,9 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
     <h2>MONO MARS — a character franchise built in public</h2>
     <p class="ssub">Created and directed a 20-episode AI-hybrid short-form series, released episodically on Instagram —
     vertical-first storytelling, serialized cliffhangers, and a global following built without paid distribution.
-    It grew into an international theatrical co-production (Korea–France–Italy, agreement signed at MIPCOM Cannes 2024,
-    target release 2027–28), and became the brand character for Hankook Tire Formula E World Championship
+    It grew into an international theatrical co-production (Korea–France–Italy, agreement signed at MIPCOM Cannes 2024
+    — <a href="#feature" style="color:#ff5c39;text-decoration:none;border-bottom:1px solid rgba(255,92,57,.4)">details below</a>),
+    and became the brand character for Hankook Tire Formula E World Championship
     (3 seasons, brand IG 10K → 220K), Seoul City, Samsung TV Channel, and Korea Aerospace University.</p>
     <div class="wmeta"><span class="chip">IP Creation</span><span class="chip">Series Direction</span><span class="chip">Brand Campaigns</span><span class="chip">Co-Production</span></div>
   </div>
@@ -396,6 +417,50 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
       <div class="nvmeta"><span>Cinematic visual novel</span><span>Author</span><span>Korean &amp; English</span><span>Serialized online</span></div>
       <a class="wlink" href="https://monomars-web.vercel.app" target="_blank" rel="noopener">Read the novel →</a>
     </div>
+  </div>
+</div></section>
+
+<section id="feature"><div class="wrap">
+  <div class="shead">
+    <div class="skicker">In Development</div>
+    <h2>MONO MARS: ORIGIN — theatrical animated feature</h2>
+    <p class="ssub">A memory-erased emotional AI robot wakes among the ruins of a collapsed city and journeys
+    with other broken souls to find what it means to be more human than human. Written and directed by me,
+    adapted from my own novel, produced as a three-country international co-production.</p>
+  </div>
+
+  <div class="ftgrid">
+    <div class="ftpanel">
+      <img src="ig/origin_earth.jpg" alt="MONO MARS: ORIGIN Part I — EARTH key art, the robot standing in a field of discarded technology" loading="lazy">
+      <div class="ftshade">
+        <div class="ftpart">Part I</div>
+        <h4>EARTH: Origin of Emotion</h4>
+        <div class="ftrun">100 min · target release 2028</div>
+      </div>
+    </div>
+    <div class="ftpanel">
+      <img src="ig/origin_mars.jpg" alt="MONO MARS: ORIGIN Part II — MARS key art, the robot overlooking a Martian canyon" loading="lazy">
+      <div class="ftshade">
+        <div class="ftpart">Part II</div>
+        <h4>MARS: Origin of Life</h4>
+        <div class="ftrun">100 min · target release 2029</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ftfacts">
+    <div class="ftfact"><div class="k">Format</div><div class="v"><b>3D animated theatrical feature</b><br>Two parts · 100 min each</div></div>
+    <div class="ftfact"><div class="k">Co-production</div><div class="v"><b>Korea · France · Italy</b><br>CGTale · Something Big</div></div>
+    <div class="ftfact"><div class="k">Agreement</div><div class="v"><b>MIPCOM Cannes, Oct 2024</b><br>Korea Content Highlight signing</div></div>
+    <div class="ftfact"><div class="k">My role</div><div class="v"><b>Director · Original creator</b><br>Writer of the source novel</div></div>
+  </div>
+
+  <p class="ftnote">The AI short <b>Faces of the Unknown</b> is the prequel to this feature — made to prove the
+  hybrid pipeline before committing it to a 200-minute production. Same director, same IP, same workflow:
+  generative AI for volume and iteration, traditional VFX craft for the shots AI still can't finish.</p>
+
+  <div class="wmeta" style="margin-top:16px">
+    <span class="chip">Feature Direction</span><span class="chip">Original Screenplay</span><span class="chip">International Co-Production</span><span class="chip">AI-VFX Hybrid Pipeline</span>
   </div>
 </div></section>
 
