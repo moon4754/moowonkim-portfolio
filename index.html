@@ -36,8 +36,9 @@ nav{position:sticky;top:0;z-index:50;background:rgba(8,9,11,.82);backdrop-filter
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
 .logo{font-weight:800;letter-spacing:-.02em;font-size:15px}
 .logo span{color:var(--ac)}
-.navlinks{display:flex;gap:26px;font-size:13.5px;color:var(--tx2);font-weight:500}
+.navlinks{display:flex;gap:26px;font-size:13.5px;color:var(--tx2);font-weight:500;white-space:nowrap}
 .navlinks a:hover{color:var(--tx)}
+@media(max-width:1020px){.navlinks{gap:17px;font-size:13px}}
 @media(max-width:760px){.navlinks{display:none}}
 
 /* HERO */
@@ -229,7 +230,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
 <nav><div class="wrap">
   <div class="logo">MOOWON<span>.</span>KIM</div>
   <div class="navlinks">
-    <a href="#work">Work</a><a href="#audience">MONO MARS</a><a href="#feature">Feature</a><a href="#festivals">Festivals</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <a href="#work">Work</a><a href="#audience">MONO MARS</a><a href="#feature">Feature</a><a href="#festivals">Festivals</a><a href="#experience">Experience</a><a href="#toolkit">Toolkit</a><a href="#contact">Contact</a>
   </div>
 </div></nav>
 
@@ -529,7 +530,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
   </div>
 </div></section>
 
-<section><div class="wrap">
+<section id="toolkit"><div class="wrap">
   <div class="shead">
     <div class="skicker">Toolkit</div>
     <h2>Craft stack</h2>
