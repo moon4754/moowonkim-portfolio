@@ -1,0 +1,614 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Moowon Kim — AI Creative Director | Cinematic AI Artist | AI Filmmaker</title>
+<meta name="description" content="Moowon Kim — AI Creative Director, Cinematic AI Artist, AI Filmmaker, CG Supervisor, 3D Artist &amp; 3D Modeler. ex-ILM (Lucasfilm) · Dexter Studios AI VFX Lead · Creator of MONO MARS (25M+ views) · 8 international AI film festival selections.">
+<meta property="og:title" content="Moowon Kim — AI Creative Director | Cinematic AI Artist | AI Filmmaker">
+<meta property="og:description" content="Hollywood VFX craft meets generative AI. ex-ILM · Dexter AI VFX Lead · MONO MARS creator · 8 festival selections.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://moowonkim.soloflux.net/">
+<meta property="og:image" content="https://moowonkim.soloflux.net/og_image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://moowonkim.soloflux.net/og_image.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2308090b'/%3E%3Ctext x='50' y='68' font-family='Inter,sans-serif' font-size='54' font-weight='800' fill='%23ff5c39' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08090b; --bg2:#0e1014; --card:#12151a; --line:#22262e;
+  --tx:#e9ecf1; --tx2:#9aa3b2; --tx3:#5f6875;
+  --ac:#ff5c39; --ac2:#ffb347;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(8,9,11,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-weight:800;letter-spacing:-.02em;font-size:15px}
+.logo span{color:var(--ac)}
+.navlinks{display:flex;gap:26px;font-size:13.5px;color:var(--tx2);font-weight:500}
+.navlinks a:hover{color:var(--tx)}
+@media(max-width:760px){.navlinks{display:none}}
+
+/* HERO */
+header{padding:96px 0 72px;position:relative;overflow:hidden}
+header::before{content:'';position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:900px;height:900px;
+  background:radial-gradient(circle,rgba(255,92,57,.13) 0%,rgba(255,92,57,0) 62%);pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ac2);border:1px solid rgba(255,179,71,.28);background:rgba(255,179,71,.07);padding:7px 14px;border-radius:100px;margin-bottom:26px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--ac2);box-shadow:0 0 10px var(--ac2)}
+h1{font-size:clamp(38px,6.4vw,68px);font-weight:800;letter-spacing:-.035em;line-height:1.05;margin-bottom:8px}
+.role{font-size:clamp(15.5px,1.85vw,19.5px);font-weight:600;color:var(--ac);letter-spacing:-.005em;margin-bottom:24px;line-height:1.5;max-width:680px}
+.role i{font-style:normal;color:var(--tx3);font-weight:400;padding:0 3px}
+.lede{font-size:clamp(15.5px,1.9vw,18.5px);color:var(--tx2);max-width:660px;font-weight:400}
+.lede b{color:var(--tx);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:8px;font-size:14.5px;font-weight:600;transition:.18s;border:1px solid transparent}
+.btn-p{background:var(--ac);color:#fff}
+.btn-p:hover{background:#ff7050;transform:translateY(-1px)}
+.btn-s{border-color:var(--line);color:var(--tx);background:var(--card)}
+.btn-s:hover{border-color:#39404c;background:#171b21}
+.htop{display:flex;align-items:flex-start;gap:44px;position:relative}
+.hleft{flex:1;min-width:0}
+.hphoto{flex:none;width:270px;position:relative}
+.hphoto img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:16px;border:1px solid var(--line);background:var(--card)}
+.hphoto::after{content:'';position:absolute;inset:-1px;border-radius:16px;pointer-events:none;
+  box-shadow:inset 0 -70px 70px -40px rgba(8,9,11,.85),0 18px 50px -18px rgba(0,0,0,.7)}
+@media(max-width:900px){
+  .htop{flex-direction:column-reverse;gap:28px}
+  .hphoto{width:150px}
+}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:64px}
+@media(max-width:860px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px 20px}
+.stat .n{font-size:clamp(24px,3.4vw,32px);font-weight:800;letter-spacing:-.03em;color:var(--tx);line-height:1.1}
+.stat .n em{font-style:normal;color:var(--ac)}
+.stat .l{font-size:12.5px;color:var(--tx3);margin-top:7px;font-weight:500;line-height:1.4}
+
+/* SECTION */
+section{padding:76px 0;border-top:1px solid var(--line)}
+.shead{margin-bottom:38px}
+.skicker{font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ac);margin-bottom:11px}
+h2{font-size:clamp(25px,3.6vw,34px);font-weight:700;letter-spacing:-.028em}
+.ssub{color:var(--tx2);font-size:15px;margin-top:9px;max-width:620px}
+
+/* WORK */
+.work{display:grid;gap:26px}
+.wcard{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.2s}
+.wcard:hover{border-color:#39404c}
+.vid{position:relative;width:100%;padding-top:56.25%;background:#000}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.wbody{padding:26px 28px 28px}
+.wtag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ac2);
+  border:1px solid rgba(255,179,71,.26);padding:4px 10px;border-radius:5px;margin-bottom:13px}
+.wcard h3{font-size:20.5px;font-weight:700;letter-spacing:-.02em;margin-bottom:9px}
+.wcard p{color:var(--tx2);font-size:14.7px}
+.wmeta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{font-size:12px;color:var(--tx2);background:#171b21;border:1px solid var(--line);padding:5px 11px;border-radius:6px}
+.wlink{display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-size:14px;font-weight:600;color:var(--ac)}
+.wlink:hover{text-decoration:underline}
+
+/* INSTAGRAM */
+.igbar{display:flex;align-items:center;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:18px;flex-wrap:wrap}
+.igav{width:60px;height:60px;border-radius:50%;flex:none;object-fit:cover;border:2px solid var(--ac);padding:2px;background:var(--bg)}
+.igid{flex:1;min-width:190px}
+.igid .h{font-size:17px;font-weight:700;letter-spacing:-.01em;display:flex;align-items:center;gap:7px}
+.igid .h svg{width:17px;height:17px;flex:none}
+.igid .s{font-size:13.4px;color:var(--tx2);margin-top:4px}
+.igstat{display:flex;gap:26px}
+.igstat div{text-align:center}
+.igstat b{display:block;font-size:19px;font-weight:800;letter-spacing:-.02em}
+.igstat span{font-size:11px;color:var(--tx3);letter-spacing:.06em;text-transform:uppercase}
+.igfollow{flex:none;background:var(--ac);color:#fff;font-size:13.5px;font-weight:700;padding:10px 20px;border-radius:8px}
+.igfollow:hover{background:#ff714f}
+.iggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:700px){.iggrid{grid-template-columns:repeat(2,1fr)}.igstat{gap:18px}}
+.igcell{position:relative;display:block;aspect-ratio:4/5;border-radius:11px;overflow:hidden;background:#0c0e12;border:1px solid var(--line)}
+.igcell img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease,opacity .2s}
+.igcell:hover img{transform:scale(1.05);opacity:.72}
+.igcap{position:absolute;left:0;right:0;bottom:0;padding:26px 13px 11px;font-size:12.3px;line-height:1.45;color:#fff;
+  background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.55) 55%,transparent);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.igplay{position:absolute;top:9px;right:10px;width:20px;height:20px;opacity:.95;filter:drop-shadow(0 1px 3px rgba(0,0,0,.6))}
+
+/* BRAND CAMPAIGN */
+.bcwrap{margin-top:38px}
+.bchead{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.bchead h3{font-size:17px;font-weight:700;letter-spacing:-.2px}
+.bchead p{color:var(--tx2);font-size:13.5px;line-height:1.6;margin-top:6px;max-width:760px}
+.bcnote{color:var(--tx3);font-size:12px;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.bcgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+@media(max-width:700px){.bcgrid{grid-template-columns:1fr}}
+.bccell{position:relative;display:block;aspect-ratio:16/9;border-radius:11px;overflow:hidden;background:#0c0e12;border:1px solid var(--line)}
+.bccell img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease,opacity .2s}
+.bccell:hover img{transform:scale(1.05);opacity:.72}
+.bccap{position:absolute;left:0;right:0;bottom:0;padding:28px 13px 11px;font-size:12.3px;line-height:1.45;color:#fff;
+  background:linear-gradient(to top,rgba(0,0,0,.9),rgba(0,0,0,.55) 58%,transparent)}
+.bcplay{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;
+  background:rgba(0,0,0,.55);border:1.5px solid rgba(255,255,255,.85);display:flex;align-items:center;justify-content:center}
+.bcplay svg{width:16px;height:16px;margin-left:2px}
+
+/* NOVEL */
+.nvwrap{margin-top:38px;display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:26px;align-items:center;
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+@media(max-width:760px){.nvwrap{grid-template-columns:1fr;gap:18px}}
+.nvimg{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:11px;border:1px solid var(--line);background:#0c0e12}
+.nvbody h3{font-size:17px;font-weight:700;letter-spacing:-.2px}
+.nvbody .nvkr{font-size:13px;color:var(--tx3);margin-top:4px}
+.nvbody p{color:var(--tx2);font-size:13.5px;line-height:1.62;margin-top:10px;max-width:640px}
+.nvmeta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.nvmeta span{font-size:11.5px;letter-spacing:.04em;color:var(--tx2);background:#151920;border:1px solid var(--line);border-radius:999px;padding:5px 11px}
+
+/* FEST */
+.festwrap{display:flex;gap:34px;align-items:flex-start}
+.poster{flex:none;width:264px}
+.poster img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line);box-shadow:0 22px 55px -20px rgba(0,0,0,.85)}
+.poster .pcap{font-size:11.5px;color:var(--tx3);text-align:center;margin-top:11px;letter-spacing:.04em}
+.festcol{flex:1;min-width:0}
+@media(max-width:820px){.festwrap{flex-direction:column;gap:26px}.poster{width:210px;margin:0 auto}}
+.fest{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:11px}
+.fitem{display:flex;align-items:flex-start;gap:11px;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:14px 16px;font-size:13.6px}
+.fdot{flex:none;width:6px;height:6px;border-radius:50%;background:var(--ac);margin-top:7px}
+
+/* TIMELINE */
+.tl{position:relative;padding-left:26px}
+.tl::before{content:'';position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.titem{position:relative;padding-bottom:34px}
+.titem:last-child{padding-bottom:0}
+.titem::before{content:'';position:absolute;left:-25px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--line)}
+.titem.now::before{border-color:var(--ac);background:var(--ac);box-shadow:0 0 0 4px rgba(255,92,57,.15)}
+.tdate{font-size:12px;font-weight:600;letter-spacing:.05em;color:var(--tx3);text-transform:uppercase}
+.tco{font-size:18px;font-weight:700;letter-spacing:-.02em;margin:4px 0 2px}
+.trole{font-size:14.5px;color:var(--ac);font-weight:600;margin-bottom:8px}
+.tdesc{font-size:14.4px;color:var(--tx2)}
+
+/* TOOLS */
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.tgroup{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.tgroup h4{font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ac);margin-bottom:14px}
+.tlist{display:flex;flex-wrap:wrap;gap:7px}
+.tlist span{font-size:13px;color:var(--tx2);background:#171b21;border:1px solid var(--line);padding:6px 11px;border-radius:6px}
+
+/* CONTACT */
+.contact{text-align:center;padding:88px 0}
+.contact h2{margin-bottom:14px}
+.contact p{color:var(--tx2);font-size:16px;max-width:520px;margin:0 auto 32px}
+.links{display:flex;flex-wrap:wrap;justify-content:center;gap:11px}
+footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--tx3);font-size:13px}
+.note{font-size:12.5px;color:var(--tx3);margin-top:9px}
+/* ACCESS / PASSWORD BADGE */
+.pwbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px;padding:11px 14px;
+  background:rgba(255,92,57,.07);border:1px solid rgba(255,92,57,.34);border-radius:10px}
+.pwbar svg{width:15px;height:15px;flex:none;fill:var(--ac)}
+.pwbar .t{font-size:12.8px;color:var(--tx2);line-height:1.5}
+.pwbar code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;font-weight:700;
+  color:var(--ac);background:rgba(255,92,57,.13);border:1px solid rgba(255,92,57,.3);
+  border-radius:5px;padding:2px 8px;letter-spacing:.09em;user-select:all}
+.pwhint{font-size:12.2px;color:var(--tx3);margin-top:4px;text-align:left;width:100%;display:flex;align-items:center;gap:7px}
+.pwhint::before{content:'';width:13px;height:13px;flex:none;background:var(--tx3);
+  -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18 8h-1V6A5 5 0 0 0 7 6v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6zm3 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z'/></svg>") center/contain no-repeat;
+          mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18 8h-1V6A5 5 0 0 0 7 6v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6zm3 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z'/></svg>") center/contain no-repeat}
+.pwhint code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:700;color:var(--ac);
+  background:rgba(255,92,57,.12);border-radius:4px;padding:1px 6px;letter-spacing:.08em;user-select:all}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <div class="logo">MOOWON<span>.</span>KIM</div>
+  <div class="navlinks">
+    <a href="#work">Work</a><a href="#audience">MONO MARS</a><a href="#festivals">Festivals</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<header><div class="wrap">
+  <div class="htop">
+    <div class="hleft">
+      <div class="eyebrow"><span class="dot"></span>Open to Creative Director &amp; AI Film roles</div>
+      <h1>Moowon Kim</h1>
+      <div class="role">AI&nbsp;Creative&nbsp;Director <i>|</i> Cinematic&nbsp;AI&nbsp;Artist <i>|</i> AI&nbsp;Filmmaker <i>|</i> CG&nbsp;Supervisor <i>|</i> 3D&nbsp;Artist <i>|</i> 3D&nbsp;Modeler</div>
+      <p class="lede">
+        <b>15+ years of Hollywood-scale VFX craft, now directing with generative AI.</b>
+        ex-Industrial Light &amp; Magic (Lucasfilm) 3D Modeler → Dexter Studios CG Supervisor →
+        Founder/CD at CGTALE → currently leading <b>Dexter Studios' AI VFX R&amp;D Lab</b>.
+        I bridge what AI can't do yet with what traditional VFX has always done — and ship it at theatrical quality.
+      </p>
+    </div>
+    <div class="hphoto"><img src="/moowon.jpg" alt="Moowon Kim" width="720" height="728"></div>
+  </div>
+  <div class="cta">
+    <a class="btn btn-p" href="https://youtu.be/1b1qSxOusR0" target="_blank" rel="noopener">▶ Watch AI Short Film</a>
+    <a class="btn btn-s" href="https://vimeo.com/1051019078/c320c5b532" target="_blank" rel="noopener">VFX Demo Reel</a>
+    <a class="btn btn-s" href="./Moowon_Kim_Creative_Director_2026.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+    <div class="pwhint">VFX Demo Reel is a private link — password <code>4754</code> if prompted.</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="n"><em>25M+</em></div><div class="l">Instagram views in 90 days<br>(top post 6.8M+)</div></div>
+    <div class="stat"><div class="n"><em>210K+</em></div><div class="l">Global followers<br>MONO MARS IP</div></div>
+    <div class="stat"><div class="n"><em>8</em></div><div class="l">International AI film<br>festival selections</div></div>
+    <div class="stat"><div class="n"><em>15+</em></div><div class="l">Years in VFX<br>ILM · Dexter · CGTALE</div></div>
+  </div>
+</div></header>
+
+<section id="work"><div class="wrap">
+  <div class="shead">
+    <div class="skicker">Selected Work</div>
+    <h2>Directed, produced, and finished end-to-end</h2>
+    <p class="ssub">From generative pipelines to theatrical VFX — concept, direction, production, and final delivery.</p>
+  </div>
+
+  <div class="work">
+    <div class="wcard">
+      <div class="vid"><iframe src="https://www.youtube.com/embed/1b1qSxOusR0" title="Faces of the Unknown — AI Short Film" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+      <div class="wbody">
+        <span class="wtag">AI Short Film · 2025</span>
+        <h3>Faces of the Unknown</h3>
+        <p>Written, directed, and finished as an AI-native short film. Selected at 8 international AI film
+        festivals including AI Film Awards Cannes 2026, Las Vegas AI Film Festival, and Seoul International AI Film Festival.</p>
+        <div class="wmeta"><span class="chip">Direction</span><span class="chip">Generative Video</span><span class="chip">VFX Finish</span><span class="chip">Sound &amp; Edit</span></div>
+      </div>
+    </div>
+
+    <div class="wcard">
+      <div class="vid"><iframe src="https://player.vimeo.com/video/1051019078?h=c320c5b532&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1" title="Theatrical VFX Reel — ILM &amp; Dexter Studios" allow="autoplay;fullscreen;picture-in-picture;clipboard-write" allowfullscreen loading="lazy"></iframe></div>
+      <div class="wbody">
+        <span class="wtag">VFX Reel · Feature Film</span>
+        <h3>Theatrical VFX Reel — ILM &amp; Dexter Studios</h3>
+        <p>Modeling, texturing, lookdev, and lighting work across major theatrical productions:
+        <b>Pacific Rim</b>, <b>Star Trek: Into Darkness</b>, <b>Strange Magic</b> (ILM Singapore),
+        and <b>Along With The Gods</b>, <b>Kung Fu Yoga</b>, <b>Journey to the West</b> (Dexter Studios).</p>
+        <div class="wmeta"><span class="chip">Modeling</span><span class="chip">Lookdev</span><span class="chip">Lighting</span><span class="chip">CG Supervision</span></div>
+        <a class="wlink" href="https://vimeo.com/1051019078/c320c5b532" target="_blank" rel="noopener">Watch on Vimeo →</a>
+        <div class="pwbar">
+          <svg viewBox="0 0 24 24"><path d="M18 8h-1V6A5 5 0 0 0 7 6v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6zm3 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+          <div class="t">Private reel — plays inline above, no login needed. If Vimeo ever asks for a password, use <code>4754</code>.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div></section>
+
+<section id="audience"><div class="wrap">
+  <div class="shead">
+    <div class="skicker">Original IP</div>
+    <h2>MONO MARS — a character franchise built in public</h2>
+    <p class="ssub">Created and directed a 20-episode AI-hybrid short-form series, released episodically on Instagram —
+    vertical-first storytelling, serialized cliffhangers, and a global following built without paid distribution.
+    It grew into an international theatrical co-production (Korea–France–Italy, agreement signed at MIPCOM Cannes 2024,
+    target release 2027–28), and became the brand character for Hankook Tire Formula E World Championship
+    (3 seasons, brand IG 10K → 220K), Seoul City, Samsung TV Channel, and Korea Aerospace University.</p>
+    <div class="wmeta"><span class="chip">IP Creation</span><span class="chip">Series Direction</span><span class="chip">Brand Campaigns</span><span class="chip">Co-Production</span></div>
+  </div>
+
+  <a class="igbar" href="https://www.instagram.com/mono_mars/" target="_blank" rel="noopener">
+    <img class="igav" src="/ig/avatar.jpg" alt="MONO MARS Instagram profile picture" loading="lazy">
+    <div class="igid">
+      <div class="h">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ff5c39" stroke-width="2" stroke-linecap="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r=".9" fill="#ff5c39" stroke="none"/></svg>
+        @mono_mars
+      </div>
+      <div class="s">MONO MARS — Emotional AI robot · Created, directed &amp; produced by Moowon Kim</div>
+    </div>
+    <div class="igstat">
+      <div><b>143K</b><span>Followers</span></div>
+      <div><b>209</b><span>Posts</span></div>
+      <div><b>25M+</b><span>Views / 90d</span></div>
+    </div>
+    <span class="igfollow">View profile</span>
+  </a>
+
+  <div class="iggrid">
+    <a class="igcell" href="https://www.instagram.com/reel/DVvurZqCRCQ/" target="_blank" rel="noopener">
+      <img src="/ig/DVvurZqCRCQ.jpg" alt="Mono Mars origin reveal" loading="lazy">
+      <svg class="igplay" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+      <div class="igcap">Origin — who Mono really is</div>
+    </a>
+    <a class="igcell" href="https://www.instagram.com/reel/DQdhiOjExWm/" target="_blank" rel="noopener">
+      <img src="/ig/DQdhiOjExWm.jpg" alt="Episode 16 — what is Greeny" loading="lazy">
+      <svg class="igplay" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+      <div class="igcap">Ep.16 — What is Greeny, really?</div>
+    </a>
+    <a class="igcell" href="https://www.instagram.com/reel/DQ6LlIWiMTN/" target="_blank" rel="noopener">
+      <img src="/ig/DQ6LlIWiMTN.jpg" alt="Episode 17 — a strange robot appears" loading="lazy">
+      <svg class="igplay" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+      <div class="igcap">Ep.17 — A strange robot appears</div>
+    </a>
+    <a class="igcell" href="https://www.instagram.com/reel/DRBLKbkEjcn/" target="_blank" rel="noopener">
+      <img src="/ig/DRBLKbkEjcn.jpg" alt="Episode 18 — Greeny's tragedy" loading="lazy">
+      <svg class="igplay" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+      <div class="igcap">Ep.18 — Greeny's tragedy</div>
+    </a>
+    <a class="igcell" href="https://www.instagram.com/reel/DRI8ve5Eqqa/" target="_blank" rel="noopener">
+      <img src="/ig/DRI8ve5Eqqa.jpg" alt="Episode 19 — after the accident" loading="lazy">
+      <svg class="igplay" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+      <div class="igcap">Ep.19 — After the accident</div>
+    </a>
+    <a class="igcell" href="https://www.instagram.com/reel/DRTfL5lk4LU/" target="_blank" rel="noopener">
+      <img src="/ig/DRTfL5lk4LU.jpg" alt="Episode 20 — Greeny vanishes" loading="lazy">
+      <svg class="igplay" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+      <div class="igcap">Ep.20 — Greeny vanishes</div>
+    </a>
+    <a class="igcell" href="https://www.instagram.com/p/DY7Ur1tjy_w/" target="_blank" rel="noopener">
+      <img src="/ig/DY7Ur1tjy_w.jpg" alt="Latest character design still" loading="lazy">
+      <div class="igcap">Latest — character design still</div>
+    </a>
+    <a class="igcell" href="https://www.instagram.com/reel/DRd0U2Jkfdx/" target="_blank" rel="noopener">
+      <img src="/ig/DRd0U2Jkfdx.jpg" alt="Faces of the Unknown festival selection" loading="lazy">
+      <svg class="igplay" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+      <div class="igcap">Festival — Seoul Int'l AI Film Festival</div>
+    </a>
+  </div>
+
+  <div class="bcwrap">
+    <div class="bchead">
+      <div>
+        <h3>Brand campaign — Hankook Tire × ABB FIA Formula E World Championship</h3>
+        <p>MONO MARS was appointed the official brand character of Hankook Tire's Formula E partnership and
+        fronted the campaign across three championship seasons — race films, product spots for the iON EV tire
+        line, and sustainability content, directed and produced in-house and published on the MONO MARS channel.</p>
+      </div>
+      <div class="bcnote">3 seasons · Official brand character<br>
+        <a href="https://www.youtube.com/@monomars" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">youtube.com/@monomars →</a></div>
+    </div>
+    <div class="bcgrid">
+      <a class="bccell" href="https://www.youtube.com/watch?v=jt6U6uGSGww" target="_blank" rel="noopener">
+        <img src="/ig/hk_jt6U6uGSGww.jpg" alt="Hankook iON mode activated — Formula E race film" loading="lazy">
+        <div class="bcplay"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="bccap">iON mode is activated! — Formula E race film</div>
+      </a>
+      <a class="bccell" href="https://www.youtube.com/watch?v=R5cHCu6VjO0" target="_blank" rel="noopener">
+        <img src="/ig/hk_R5cHCu6VjO0.jpg" alt="Hankook iON makes a difference in a Formula E race" loading="lazy">
+        <div class="bcplay"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="bccap">iON makes a difference in a Formula E race</div>
+      </a>
+      <a class="bccell" href="https://www.youtube.com/watch?v=2fwN7QhZxBE" target="_blank" rel="noopener">
+        <img src="/ig/hk_2fwN7QhZxBE.jpg" alt="Hankook iON materials checkpoint — sustainability spot" loading="lazy">
+        <div class="bcplay"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>
+        <div class="bccap">iON Materials Checkpoint — sustainability spot</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nvwrap">
+    <a href="https://monomars-web.vercel.app" target="_blank" rel="noopener">
+      <img class="nvimg" src="/ig/mm0_book.jpg" alt="MONO MARS 0 — Fragments of Deleted Memory, cinematic visual novel" loading="lazy">
+    </a>
+    <div class="nvbody">
+      <h3>Novel — <em>MONO MARS 0: Fragments of Deleted Memory</em></h3>
+      <div class="nvkr">MONO MARS 0 — 삭제된 기억의 파편 · Written by Moowon Kim</div>
+      <p>Wrote and published the origin novel of the franchise — a cinematic visual novel that predates
+      the Instagram series and supplies the backstory the films are built on. Serialized chapter by chapter
+      on its own reader site in Korean and English, with illustrated key art throughout.</p>
+      <div class="nvmeta"><span>Cinematic visual novel</span><span>Author</span><span>Korean &amp; English</span><span>Serialized online</span></div>
+      <a class="wlink" href="https://monomars-web.vercel.app" target="_blank" rel="noopener">Read the novel →</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="festivals"><div class="wrap">
+  <div class="shead">
+    <div class="skicker">Recognition</div>
+    <h2>8 international AI film festival selections</h2>
+    <p class="ssub">For <i>Faces of the Unknown</i> (2025) — third-party validation of direction and taste, not just tooling.</p>
+  </div>
+  <div class="festwrap">
+  <div class="poster">
+    <a href="https://youtu.be/1b1qSxOusR0" target="_blank" rel="noopener"><img src="/faces_poster.jpg" alt="MONO MARS: Faces of the Unknown — official poster" width="620" height="1106" loading="lazy"></a>
+    <div class="pcap">MONO MARS: Faces of the Unknown (2025)</div>
+  </div>
+  <div class="festcol">
+  <div class="fest">
+    <div class="fitem"><span class="fdot"></span><div>AI Film Awards <b>Cannes</b> 2026</div></div>
+    <div class="fitem"><span class="fdot"></span><div><b>Las Vegas</b> AI Film Festival</div></div>
+    <div class="fitem"><span class="fdot"></span><div><b>Seoul</b> International AI Film Festival 2025</div></div>
+    <div class="fitem"><span class="fdot"></span><div>AIFilm Awards <b>Bali</b> 2025</div></div>
+    <div class="fitem"><span class="fdot"></span><div><b>Pulse of Animation</b> Festival 2025</div></div>
+    <div class="fitem"><span class="fdot"></span><div><b>Australian AI</b> Festival 2025</div></div>
+    <div class="fitem"><span class="fdot"></span><div><b>Nikola Tesla</b> Film Festival 2025</div></div>
+    <div class="fitem"><span class="fdot"></span><div><b>Hollywood</b> AI Short Film Awards 2026</div></div>
+  </div>
+  </div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <div class="shead">
+    <div class="skicker">Experience</div>
+    <h2>From ILM to AI-native direction</h2>
+  </div>
+  <div class="tl">
+    <div class="titem now">
+      <div class="tdate">Feb 2026 — Present · Seoul</div>
+      <div class="tco">Dexter Studios</div>
+      <div class="trole">AI VFX Team Leader (R&amp;D Lab)</div>
+      <div class="tdesc">Leading the AI VFX R&amp;D team; supervising generative AI across 7 concurrent global feature/OTT productions — previs, environment generation, and character consistency, delivering shots traditionally infeasible with conventional VFX at theatrical quality bar. Translating MONO MARS AI methodology into theatrical-scale VFX infrastructure.</div>
+    </div>
+    <div class="titem">
+      <div class="tdate">Jun 2018 — Dec 2025 · Seoul / Global</div>
+      <div class="tco">CGTALE Studios</div>
+      <div class="trole">Founder / Creative Director</div>
+      <div class="tdesc">Created and directed MONO MARS IP. Led a feature theatrical animation project from scratch to full international co-production (Korea–France–Italy). Directed brand collaborations with Formula E, Seoul City, and Samsung TV.</div>
+    </div>
+    <div class="titem">
+      <div class="tdate">Mar 2017 — Dec 2017 · Shanghai</div>
+      <div class="tco">Yoozoo Games</div>
+      <div class="trole">CG Executive Director</div>
+      <div class="tdesc">Directed high-fidelity game cinematics and promotional campaigns; led internal and external art teams.</div>
+    </div>
+    <div class="titem">
+      <div class="tdate">Apr 2014 — Sep 2016 · Seoul</div>
+      <div class="tco">Dexter Studios</div>
+      <div class="trole">CG Supervisor / 3D Generalist</div>
+      <div class="tdesc">Feature VFX on <i>Along With The Gods</i>, <i>Kung Fu Yoga</i>, <i>Journey to the West</i> — modeling, texturing, lookdev, and lighting on complex 3D sequences.</div>
+    </div>
+    <div class="titem">
+      <div class="tdate">Jun 2010 — Jun 2013 · Singapore</div>
+      <div class="tco">Industrial Light &amp; Magic (Lucasfilm)</div>
+      <div class="trole">3D Modeler</div>
+      <div class="tdesc">Credits: <i>Pacific Rim</i> (2013), <i>Star Trek: Into Darkness</i> (2013), <i>Strange Magic</i> (2015).</div>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="shead">
+    <div class="skicker">Toolkit</div>
+    <h2>Craft stack</h2>
+  </div>
+  <div class="tools">
+    <div class="tgroup"><h4>Generative AI</h4><div class="tlist">
+      <span>Runway</span><span>Kling</span><span>Veo</span><span>Midjourney</span><span>ComfyUI</span><span>Higgsfield</span><span>Magnific</span><span>ElevenLabs</span>
+    </div></div>
+    <div class="tgroup"><h4>3D / VFX</h4><div class="tlist">
+      <span>Maya</span><span>Nuke</span><span>ZBrush</span><span>MARI</span><span>RenderMan</span><span>Redshift</span><span>Photoshop</span>
+    </div></div>
+    <div class="tgroup"><h4>Post / Edit</h4><div class="tlist">
+      <span>Premiere Pro</span><span>After Effects</span><span>DaVinci Resolve</span>
+    </div></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div class="skicker">Contact</div>
+  <h2>Let's make something that holds up on a big screen.</h2>
+  <p>Open to Creative Director, AI Filmmaker, and AI VFX leadership roles — remote or relocation.
+  Based in Seoul, working globally.</p>
+  <div class="links">
+    <a class="btn btn-p" href="mailto:3d71moowon@gmail.com">3d71moowon@gmail.com</a>
+    <a class="btn btn-s" href="https://www.linkedin.com/in/moowon-kim-cgtale/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn btn-s" href="https://www.instagram.com/mono_mars/" target="_blank" rel="noopener">Instagram</a>
+    <a class="btn btn-s" href="https://www.youtube.com/@monomars" target="_blank" rel="noopener">YouTube</a>
+    <a class="btn btn-s" href="./Moowon_Kim_Creative_Director_2026.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Moowon Kim · Seoul, South Korea</div></footer>
+
+<script>
+/* cookieless visit tracking -> self-hosted PocketBase */
+(function(){
+  try{
+    var UA = navigator.userAgent || '';
+    if(/bot|crawler|spider|crawling|slurp|bingpreview|headlesschrome|lighthouse|preview|facebookexternalhit|embedly|python-requests|curl|wget|axios|node-fetch/i.test(UA)) return;
+    if(navigator.webdriver) return;
+    var EP = 'https://pb.soloflux.net/api/collections/pf_events/records';
+
+    function sid(){
+      var k='pf_sid', v=null;
+      try{ v = sessionStorage.getItem(k); }catch(e){}
+      if(!v){
+        v = Date.now().toString(36) + Math.random().toString(36).slice(2,10);
+        try{ sessionStorage.setItem(k, v); }catch(e){}
+      }
+      return v;
+    }
+    function srcOf(r){
+      if(!r) return 'direct';
+      var h='';
+      try{ h = new URL(r).hostname.replace(/^www\./,''); }catch(e){ return 'other'; }
+      if(h === location.hostname) return 'internal';
+      if(/linkedin|lnkd\.in/.test(h)) return 'linkedin';
+      if(/google\./.test(h)) return 'google';
+      if(/instagram/.test(h)) return 'instagram';
+      if(/bing\.|duckduckgo|naver|yahoo|yandex|baidu/.test(h)) return 'search';
+      if(/facebook|t\.co|twitter|x\.com|threads/.test(h)) return 'social';
+      if(/mail\.|gmail|outlook/.test(h)) return 'email';
+      return h.slice(0,60);
+    }
+    function dev(){
+      var w = screen.width || innerWidth;
+      if(/iPad|Tablet/i.test(UA) || (w>=700 && w<1024)) return 'tablet';
+      if(/Mobi|Android|iPhone/i.test(UA) || w<700) return 'mobile';
+      return 'desktop';
+    }
+    function os(){
+      if(/Windows NT 10/.test(UA)) return 'Windows 10/11';
+      if(/Windows/.test(UA)) return 'Windows';
+      if(/Android/.test(UA)) return 'Android';
+      if(/iPhone|iPad|iPod/.test(UA)) return 'iOS';
+      if(/Mac OS X/.test(UA)) return 'macOS';
+      if(/Linux/.test(UA)) return 'Linux';
+      return 'other';
+    }
+    function br(){
+      if(/Edg\//.test(UA)) return 'Edge';
+      if(/OPR\/|Opera/.test(UA)) return 'Opera';
+      if(/SamsungBrowser/.test(UA)) return 'Samsung';
+      if(/Whale/.test(UA)) return 'Whale';
+      if(/Firefox\//.test(UA)) return 'Firefox';
+      if(/Chrome\//.test(UA)) return 'Chrome';
+      if(/Safari\//.test(UA)) return 'Safari';
+      return 'other';
+    }
+    var S = sid(), T0 = Date.now(), DEPTH = 0, SENT_END = false;
+    var TZ = ''; try{ TZ = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; }catch(e){}
+    var REF = ''; try{ REF = document.referrer ? new URL(document.referrer).hostname.replace(/^www\./,'') : ''; }catch(e){}
+
+    function base(t){
+      return { sid:S, type:t, page:(location.pathname+location.search).slice(0,200),
+               ref:REF.slice(0,200), src:srcOf(document.referrer), dev:dev(), os:os(), br:br(),
+               tz:TZ.slice(0,60), lang:(navigator.language||'').slice(0,20),
+               scr:(screen.width+'x'+screen.height) };
+    }
+    function send(d, beacon){
+      var body = JSON.stringify(d);
+      if(beacon && navigator.sendBeacon){
+        try{ navigator.sendBeacon(EP, new Blob([body],{type:'application/json'})); return; }catch(e){}
+      }
+      try{ fetch(EP,{method:'POST',headers:{'Content-Type':'application/json'},body:body,keepalive:true}); }catch(e){}
+    }
+
+    send(base('view'));
+
+    addEventListener('scroll', function(){
+      var h = document.documentElement.scrollHeight - innerHeight;
+      if(h <= 0) return;
+      var p = Math.round((scrollY / h) * 100);
+      if(p > DEPTH) DEPTH = Math.min(100, p);
+    }, {passive:true});
+
+    document.addEventListener('click', function(e){
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if(!a) return;
+      var href = a.getAttribute('href') || '';
+      if(href.charAt(0) === '#') return;
+      var label = (a.textContent || '').trim().replace(/\s+/g,' ').slice(0,60);
+      if(/\.pdf/i.test(href)) label = 'CV PDF';
+      else if(/vimeo/i.test(href)) label = 'Reel: ' + label;
+      else if(/instagram\.com\/(reel|p)\//i.test(href)) label = 'IG post: ' + label;
+      else if(/instagram\.com/i.test(href)) label = 'Instagram';
+      else if(/linkedin/i.test(href)) label = 'LinkedIn';
+      else if(/^mailto:/i.test(href)) label = 'Email';
+      var d = base('click'); d.label = label.slice(0,80); d.depth = DEPTH;
+      send(d, true);
+    }, true);
+
+    function end(){
+      if(SENT_END) return; SENT_END = true;
+      var d = base('end');
+      d.dur = Math.round((Date.now() - T0)/1000);
+      d.depth = DEPTH;
+      send(d, true);
+    }
+    addEventListener('pagehide', end);
+    addEventListener('visibilitychange', function(){ if(document.visibilityState === 'hidden') end(); });
+  }catch(e){}
+})();
+</script>
+
+</body>
+</html>
