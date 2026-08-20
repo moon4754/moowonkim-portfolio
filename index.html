@@ -636,11 +636,22 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
       return 'other';
     }
     var S = sid(), T0 = Date.now(), DEPTH = 0, SENT_END = false;
+    /* 내 기기 표식(2026-08-20): ?me=1 로 한 번만 방문하면 이 브라우저에 영구 저장(localStorage pf_me).
+       이후 모든 이벤트의 page 뒤에 v=1 이 붙어 통계에서 '내 접속'으로 분류된다. 해제는 ?me=0 */
+    var ME = false;
+    try{
+      var _q = location.search || '';
+      if(/[?&]me=0/.test(_q)) localStorage.removeItem('pf_me');
+      else if(/[?&](me=1|v=)/.test(_q)) localStorage.setItem('pf_me','1');
+      ME = localStorage.getItem('pf_me') === '1';
+    }catch(e){}
     var TZ = ''; try{ TZ = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; }catch(e){}
     var REF = ''; try{ REF = document.referrer ? new URL(document.referrer).hostname.replace(/^www\./,'') : ''; }catch(e){}
 
     function base(t){
-      return { sid:S, type:t, page:(location.pathname+location.search).slice(0,200),
+      var pg = (location.pathname + location.search).slice(0,200);
+      if(ME && !/[?&]v=/.test(pg)) pg = (pg + (pg.indexOf('?')>=0 ? '&' : '?') + 'v=1').slice(0,200);
+      return { sid:S, type:t, page:pg,
                ref:REF.slice(0,200), src:srcOf(document.referrer), dev:dev(), os:os(), br:br(),
                tz:TZ.slice(0,60), lang:(navigator.language||'').slice(0,20),
                scr:(screen.width+'x'+screen.height) };
