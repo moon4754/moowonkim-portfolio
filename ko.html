@@ -230,6 +230,26 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
 .pwhint code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:700;color:var(--ac);
   background:rgba(255,92,57,.12);border-radius:4px;padding:1px 6px;letter-spacing:.08em;user-select:all}
 </style>
+<script>
+/* 언어 자동 전환: 한국어 브라우저면 ko.html로 보낸다.
+   사용자가 언어를 직접 고르면 localStorage에 남겨 이후 자동 전환하지 않는다. */
+(function(){
+  try{
+    var KEY = 'mk_lang';
+    var pref = null;
+    try{ pref = localStorage.getItem(KEY); }catch(e){}
+    var qs = location.search;
+    if(qs.indexOf('lang=en') > -1){ try{ localStorage.setItem(KEY,'en'); }catch(e){} pref = 'en'; }
+    var isKo = (navigator.languages || [navigator.language || ''])
+                 .some(function(l){ return (l||'').toLowerCase().indexOf('ko') === 0; });
+    /* 한글판에서는 자동 전환하지 않는다 (리다이렉트 루프 방지) */
+    document.addEventListener('click', function(ev){
+      var a = ev.target && ev.target.closest && ev.target.closest('a.langsw');
+      if(a){ try{ localStorage.setItem(KEY, 'en'); }catch(e){} }
+    }, true);
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 
@@ -269,7 +289,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
     <div class="stat"><div class="n"><em>25M+</em></div><div class="l">90일간 인스타그램 조회수<br>(최고 게시물 680만+)</div></div>
     <div class="stat"><div class="n"><em>210K+</em></div><div class="l">글로벌 팔로워<br>MONO MARS IP</div></div>
     <div class="stat"><div class="n"><em>8</em></div><div class="l">국제 AI 영화제<br>공식 선정</div></div>
-    <div class="stat"><div class="n"><em>15년+</em></div><div class="l">년간 VFX 경력<br>ILM · 덱스터 · CGTALE</div></div>
+    <div class="stat"><div class="n"><em>15년+</em></div><div class="l">VFX 경력<br>ILM · 덱스터 · CGTALE</div></div>
   </div>
 </div></header>
 
@@ -315,7 +335,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
 <section id="audience"><div class="wrap">
   <div class="shead">
     <div class="skicker">오리지널 IP</div>
-    <h2>MONO MARS — 공개된 무대에서 키워낸 캐릭터 프랜차이즈</h2>
+    <h2>MONO MARS — 사람들이 보는 앞에서 키운 캐릭터 프랜차이즈</h2>
     <p class="ssub">20부작 AI 하이브리드 숏폼 시리즈를 직접 기획·연출해 인스타그램에 회차별로 공개했습니다.
     세로 화면 우선 연출과 회차마다 걸어두는 클리프행어로, 유료 배포 없이 글로벌 팬층을 만들었습니다.
     이 IP는 한국·프랑스·이탈리아 3개국 국제 공동제작 장편으로 발전했고(2024년 MIPCOM 칸에서 협약 체결
@@ -509,7 +529,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
       <div class="tdate">2026년 2월 — 현재 · 서울</div>
       <div class="tco">덱스터스튜디오</div>
       <div class="trole">AI VFX 팀장 (R&amp;D 랩)</div>
-      <div class="tdesc">AI VFX R&amp;D 팀을 이끌며 동시 진행 중인 7편의 글로벌 장편·OTT 프로젝트에 생성형 AI를 적용·감수하고 있습니다. 프리비즈, 환경 생성, 캐릭터 일관성 유지를 담당하며, 기존 VFX 방식으로는 현실적으로 불가능했던 샷을 극장 퀄리티 기준으로 완성합니다. MONO MARS에서 검증한 AI 방법론을 극장 규모의 VFX 인프라로 옮기는 작업입니다.</div>
+      <div class="tdesc">AI VFX R&amp;D 팀을 이끌며 동시 진행 중인 7편의 글로벌 장편·OTT 프로젝트에 생성형 AI 적용을 총괄하고 있습니다. 프리비즈, 환경 생성, 캐릭터 일관성 유지를 담당하며, 기존 VFX 방식으로는 현실적으로 불가능했던 샷을 극장 퀄리티 기준으로 완성합니다. MONO MARS에서 검증한 AI 방법론을 극장 규모의 VFX 인프라로 옮기는 작업입니다.</div>
     </div>
     <div class="titem">
       <div class="tdate">2018년 6월 — 2025년 12월 · 서울 / 글로벌</div>
@@ -544,21 +564,27 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
     <h2>작업 스택</h2>
   </div>
   <div class="tools">
-    <div class="tgroup"><h4>생성형 AI</h4><div class="tlist">
-      <span>Runway</span><span>Kling</span><span>Veo</span><span>Midjourney</span><span>ComfyUI</span><span>Higgsfield</span><span>Magnific</span><span>ElevenLabs</span>
+    <div class="tgroup"><h4>영상 생성</h4><div class="tlist">
+      <span>Seedance</span><span>Kling</span><span>Minimax</span><span>Veo</span><span>Runway</span><span>Luma</span><span>Sora</span><span>Magnific</span><span>Higgsfield</span>
+    </div></div>
+    <div class="tgroup"><h4>이미지 생성</h4><div class="tlist">
+      <span>Nano Banana</span><span>Seedream</span><span>Midjourney</span><span>Flux</span><span>Stable Diffusion (LoRA, ControlNet)</span>
+    </div></div>
+    <div class="tgroup"><h4>파이프라인 / 클린업</h4><div class="tlist">
+      <span>ComfyUI</span><span>Topaz</span><span>ElevenLabs</span><span>Photoshop</span><span>After Effects</span>
     </div></div>
     <div class="tgroup"><h4>3D / VFX</h4><div class="tlist">
-      <span>Maya</span><span>Nuke</span><span>ZBrush</span><span>MARI</span><span>RenderMan</span><span>Redshift</span><span>Photoshop</span>
+      <span>Maya</span><span>Nuke</span><span>ZBrush</span><span>MARI</span><span>RenderMan</span><span>Redshift</span>
     </div></div>
-    <div class="tgroup"><h4>후반 / 편집</h4><div class="tlist">
-      <span>Premiere Pro</span><span>After Effects</span><span>DaVinci Resolve</span>
+    <div class="tgroup"><h4>편집</h4><div class="tlist">
+      <span>Premiere Pro</span>
     </div></div>
   </div>
 </div></section>
 
 <section class="contact" id="contact"><div class="wrap">
   <div class="skicker">연락</div>
-  <h2>큰 화면에서도 버티는 작업을 함께 만들고 싶습니다.</h2>
+  <h2>큰 화면에서도 무너지지 않는 작품을 함께 만들고 싶습니다.</h2>
   <p>크리에이티브 디렉터, AI 필름메이커, AI VFX 리드 포지션에 열려 있습니다. 원격 근무와 이주 모두 가능합니다.
   서울에 거주하며 전 세계를 대상으로 일합니다.</p>
   <div class="links">

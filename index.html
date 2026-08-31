@@ -228,6 +228,29 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
 .pwhint code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:700;color:var(--ac);
   background:rgba(255,92,57,.12);border-radius:4px;padding:1px 6px;letter-spacing:.08em;user-select:all}
 </style>
+<script>
+/* 언어 자동 전환: 한국어 브라우저면 ko.html로 보낸다.
+   사용자가 언어를 직접 고르면 localStorage에 남겨 이후 자동 전환하지 않는다. */
+(function(){
+  try{
+    var KEY = 'mk_lang';
+    var pref = null;
+    try{ pref = localStorage.getItem(KEY); }catch(e){}
+    var qs = location.search;
+    if(qs.indexOf('lang=en') > -1){ try{ localStorage.setItem(KEY,'en'); }catch(e){} pref = 'en'; }
+    var isKo = (navigator.languages || [navigator.language || ''])
+                 .some(function(l){ return (l||'').toLowerCase().indexOf('ko') === 0; });
+    if(!pref && isKo){
+      location.replace('./ko.html' + qs + location.hash);
+      return;
+    }
+    document.addEventListener('click', function(ev){
+      var a = ev.target && ev.target.closest && ev.target.closest('a.langsw');
+      if(a){ try{ localStorage.setItem(KEY, 'ko'); }catch(e){} }
+    }, true);
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 
@@ -543,14 +566,20 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
     <h2>Craft stack</h2>
   </div>
   <div class="tools">
-    <div class="tgroup"><h4>Generative AI</h4><div class="tlist">
-      <span>Runway</span><span>Kling</span><span>Veo</span><span>Midjourney</span><span>ComfyUI</span><span>Higgsfield</span><span>Magnific</span><span>ElevenLabs</span>
+    <div class="tgroup"><h4>AI Video</h4><div class="tlist">
+      <span>Seedance</span><span>Kling</span><span>Minimax</span><span>Veo</span><span>Runway</span><span>Luma</span><span>Sora</span><span>Magnific</span><span>Higgsfield</span>
+    </div></div>
+    <div class="tgroup"><h4>AI Image</h4><div class="tlist">
+      <span>Nano Banana</span><span>Seedream</span><span>Midjourney</span><span>Flux</span><span>Stable Diffusion (LoRA, ControlNet)</span>
+    </div></div>
+    <div class="tgroup"><h4>Pipeline / Cleanup</h4><div class="tlist">
+      <span>ComfyUI</span><span>Topaz</span><span>ElevenLabs</span><span>Photoshop</span><span>After Effects</span>
     </div></div>
     <div class="tgroup"><h4>3D / VFX</h4><div class="tlist">
-      <span>Maya</span><span>Nuke</span><span>ZBrush</span><span>MARI</span><span>RenderMan</span><span>Redshift</span><span>Photoshop</span>
+      <span>Maya</span><span>Nuke</span><span>ZBrush</span><span>MARI</span><span>RenderMan</span><span>Redshift</span>
     </div></div>
-    <div class="tgroup"><h4>Post / Edit</h4><div class="tlist">
-      <span>Premiere Pro</span><span>After Effects</span><span>DaVinci Resolve</span>
+    <div class="tgroup"><h4>Edit</h4><div class="tlist">
+      <span>Premiere Pro</span>
     </div></div>
   </div>
 </div></section>
